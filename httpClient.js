@@ -3,7 +3,7 @@ var url = process.argv[2];
 
 http.get(url,function(resp){
     
-    //console.log("Got response: "+ resp.statusCode);
+    //console.log("Got response: "+ resp.statusCode); => Testing the statusCode obj.
         resp.setEncoding('utf8');
         resp.on('data', function(chunk){
             console.log(chunk);
